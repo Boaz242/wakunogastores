@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Order Now - Wakunoga Store</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0; padding: 0;
+    }
+    .header {
+      background-color: black;
+      color: burlywood;
+      padding: 20px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    nav a {
+  color: whitesmoke;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+    .container {
+      max-width: 700px;
+      background: white;
+      margin: 40px auto;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #1e1e2f;
+      text-align: center;
+    }
+    label {
+      display: block;
+      margin: 15px 0 5px;
+      font-weight: bold;
+    }
+    select, input[type="number"], input[type="text"], input[type="email"], textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      font-size: 16px;
+    }
+    input[type="number"] {
+      max-width: 100px;
+    }
+    button {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 15px 20px;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      margin-top: 25px;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+    button:hover {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="header">
+    <h1>Wakunoga Store - Place Your Order</h1>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="about us.html">ABOUT US</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="order.html">ORDER NOW</a>
+    <a href="contacts.html">CONTACTS</a>
+  </nav>
+  </div>
+</header>
+  <div class="container">
+    <h2>Order Form</h2>
+      <form>
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="name" placeholder="Your full name" required />
+
+      <label for="email">Email Address</label>
+      <input type="email" id="email" name="_replyto" placeholder="you@example.com" required />
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="e.g. 0746369376" required />
+
+      <label for="product">Select Product</label>
+      <select id="product" name="product" required>
+        <option value="">-- Choose a product --</option>
+        <option value="Casual Shirt">Casual Shirt</option>
+        <option value="Trouser">Trouser</option>
+        <option value="Classic boots">Classic boots</option>
+        <option value="Shoes">Shoes</option>
+        <option value="Jacket">Jacket</option>
+        <option value="Sports gear">Sports gear</option>
+        <option value="Cape">Cape</option>
+        <option value="Classic sandles">Classic sandles</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" value="1" required />
+
+      <label for="address">Delivery Address</label>
+      <textarea id="address" name="address" rows="3" placeholder="Your full delivery address" required></textarea>
+
+      <button type="submit">Submit Order</button>
+    </form>
+  </div>
+
+  <Footer>
+  <div style="text-align: center; padding: 20px; font-size: 14px; color: white; background-color: #1e1e2f;">
+    &copy; 2025 Wakunoga Store. All rights reserved.
+  </div>
+  </Footer>
+</body>
+</html>

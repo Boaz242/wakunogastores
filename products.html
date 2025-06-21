@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products – Wakunoga Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f8f8;
+    }
+
+    header {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    nav {
+      background-color: #34495e;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    h2 {
+      text-align: center;
+      margin-top: 30px;
+      color: #1e1e2f;
+    }
+
+    .products-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .product-card {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      width: 250px;
+      text-align: center;
+      padding: 15px;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+
+    .product-title {
+      font-size: 18px;
+      font-weight: bold;
+      margin: 10px 0 5px;
+      color: #2c3e50;
+    }
+
+    .product-price {
+      color: #e74c3c;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .buy-button {
+      background-color: #1e1e2f;
+      color: white;
+      padding: 8px 16px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    footer {
+      background-color: #1e1e2f;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      margin-top: 40px;
+    }
+
+    <style>
+  .product-card {
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+    margin: 15px;
+    font-family: Arial, sans-serif;
+  }
+
+  .slider-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slider-images {
+    display: flex;
+    width: 200%;
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slider-container:hover .slider-images {
+    transform: translateX(-50%);
+  }
+
+  .slider-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .buy-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 15px 0;
+    background-color: #1e1e2f;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  .buy-button:hover {
+    background-color: #333;
+  }
+</style>
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Wakunoga Store</h1>
+    <p>Stylish. Affordable. Authentic.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">HOME</a>
+    <a href="about us.html">ABOUT US</a>
+    <a href="products.html">PRODUCTS</a>
+    <a href="order.html">ORDER NOW</a>
+    <a href="contacts.html">CONTACTS</a>
+  </nav>
+
+  <h2>Our Fashion Collection</h2>
+
+  <div class="products-container">
+
+    <div class="product-card">
+  <div class="slider-container">
+    <div class="slider-images">
+      <img src="shirt1.jpg" alt="Front View">
+      <img src="shirt3.JPG" alt="Back View">
+    </div>
+  </div>
+  <h3 style="margin: 10px 0;">Casual Shirt</h3>
+  <p style="color: green;">Tsh 25,000</p>
+  <a href="order.html" class="buy-button">Order Now</a>
+</div>
+  <div class="product-card">
+  <div class="slider-container">
+    <div class="slider-images">
+      <img src="trouser1.JPG" alt="Front View">
+      <img src="trouser2.JPG" alt="Back View">
+    </div>
+  </div>
+  <h3 style="margin: 10px 0;">Trouser</h3>
+  <p style="color: green;">Tsh 30,000</p>
+  <a href="order.html" class="buy-button">Order Now</a>
+</div>
+  <div class="product-card">
+  <div class="slider-container">
+    <div class="slider-images">
+      <img src="boot1.jpg" alt="Front View">
+      <img src="boot2.jpg" alt="Back View">
+    </div>
+  </div>
+  <h3 style="margin: 10px 0;">Classic boots</h3>
+  <p style="color: green;">Tsh 60,000</p>
+  <a href="order.html" class="buy-button">Order Now</a>
+</div>
+
+  <div class="product-card">
+  <div class="slider-container">
+    <div class="slider-images">
+      <img src="shoe1.JPG" alt="Front View">
+      <img src="shoe2.JPG" alt="Back View">
+    </div>
+  </div>
+  <h3 style="margin: 10px 0;">Shoes</h3>
+  <p style="color: green;">Tsh 40,000</p>
+  <a href="order.html" class="buy-button">Order Now</a>
+</div>
+
+   <div class="product-card">
+  <div class="slider-container">
+    <div class="slider-images">
+      <img src="jacket1.jpg" alt="Front View">
+      <img src="jacket2.jpg" alt="Back View">
+    </div>
+  </div>
+  <h3 style="margin: 10px 0;">Jacket</h3>
+  <p style="color: green;">Tsh 30,000</p>
+  <a href="order.html" class="buy-button">Order Now</a>
+</div>
+
+ <div class="product-card">
+  <div class="slider-container">
+    <div class="slider-images">
+      <img src="vest1.JPG" alt="Front View">
+      <img src="vest2.jpg" alt="Back View">
+    </div>
+  </div>
+  <h3 style="margin: 10px 0;">Sports gear</h3>
+  <p style="color: green;">Tsh 25,000</p>
+  <a href="order.html" class="buy-button">Order Now</a>
+</div>
+
+ <div class="product-card">
+  <div class="slider-container">
+    <div class="slider-images">
+      <img src="cape1.jpg" alt="Front View">
+      <img src="cape2.JPG" alt="Back View">
+    </div>
+  </div>
+  <h3 style="margin: 10px 0;">Cape</h3>
+  <p style="color: green;">Tsh 10,000</p>
+  <a href="order.html" class="buy-button">Order Now</a>
+</div>
+
+   <div class="product-card">
+  <div class="slider-container">
+    <div class="slider-images">
+      <img src="sandle1.JPG" alt="Front View">
+      <img src="sandle2.JPG" alt="Back View">
+    </div>
+  </div>
+  <h3 style="margin: 10px 0;">Classic Sandle</h3>
+  <p style="color: green;">Tsh 25,000</p>
+  <a href="order.html" class="buy-button">Order Now</a>
+</div>
+
+<Footer>
+  <div style="text-align: center; padding: 20px; font-size: 14px; color: white; background-color: #1e1e2f; width: 1000px;">
+    &copy; 2025 Wakunoga Store. All rights reserved.
+  </div>
+  </Footer>
+</body>
+</html>
